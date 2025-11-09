@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900;
+    @apply text-white;
+    @apply min-h-screen;
+    @apply overflow-x-hidden;
+  }
+}
+
+@layer components {
+  /* Glassmorphism Card */
+  .glass-card {
+    @apply bg-white bg-opacity-10;
+    @apply backdrop-blur-md;
+    @apply border border-white border-opacity-20;
+    @apply rounded-2xl;
+    @apply shadow-xl;
+    @apply transition-all duration-300;
+  }
+
+  .glass-card:hover {
+    @apply bg-opacity-15;
+    @apply border-opacity-30;
+    @apply shadow-2xl;
+  }
+
+  /* Liquid Glass Effect */
+  .liquid-glass {
+    background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.05)
+    );
+    backdrop-filter: blur(10px) saturate(150%);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  }
+
+  /* Glass Button */
+  .glass-button {
+    @apply glass-card;
+    @apply px-6 py-3;
+    @apply font-semibold;
+    @apply cursor-pointer;
+    @apply transform;
+    @apply hover:scale-105;
+    @apply active:scale-95;
+  }
+
+  /* Navigation Bar */
+  .glass-nav {
+    @apply fixed top-0 left-0 right-0 z-50;
+    @apply glass-card;
+    @apply backdrop-blur-xl;
+    @apply m-4;
+  }
+}
+
+@layer utilities {
+  /* 3D Transform Utilities */
+  .transform-3d {
+    transform-style: preserve-3d;
+  }
+
+  .backface-hidden {
+    backface-visibility: hidden;
+  }
+}
