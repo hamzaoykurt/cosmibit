@@ -8,10 +8,14 @@ export default {
     extend: {
       colors: {
         'glass': {
-          light: 'rgba(255, 255, 255, 0.1)',
-          medium: 'rgba(255, 255, 255, 0.15)',
-          dark: 'rgba(0, 0, 0, 0.2)',
+          light: 'rgba(255, 255, 255, 0.05)',
+          medium: 'rgba(255, 255, 255, 0.08)',
+          dark: 'rgba(0, 0, 0, 0.1)',
         }
+      },
+      opacity: {
+        '8': '0.08',
+        '15': '0.15',
       },
       backdropBlur: {
         xs: '2px',

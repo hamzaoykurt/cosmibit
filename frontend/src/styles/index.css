@@ -14,17 +14,17 @@
 @layer components {
   /* Glassmorphism Card */
   .glass-card {
-    @apply bg-white bg-opacity-10;
+    @apply bg-white bg-opacity-5;
     @apply backdrop-blur-md;
-    @apply border border-white border-opacity-20;
+    @apply border border-white border-opacity-10;
     @apply rounded-2xl;
     @apply shadow-xl;
     @apply transition-all duration-300;
   }
 
   .glass-card:hover {
-    @apply bg-opacity-15;
-    @apply border-opacity-30;
+    @apply bg-opacity-8;
+    @apply border-opacity-15;
     @apply shadow-2xl;
   }
 
@@ -32,11 +32,11 @@
   .liquid-glass {
     background: linear-gradient(
       135deg,
-      rgba(255, 255, 255, 0.1),
-      rgba(255, 255, 255, 0.05)
+      rgba(255, 255, 255, 0.05),
+      rgba(255, 255, 255, 0.02)
     );
     backdrop-filter: blur(10px) saturate(150%);
-    border: 1px solid rgba(255, 255, 255, 0.18);
+    border: 1px solid rgba(255, 255, 255, 0.1);
   }
 
   /* Glass Button */
